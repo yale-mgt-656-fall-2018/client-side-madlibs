@@ -1,5 +1,13 @@
 adjectives = adjectives.concat([
-    'short',
-    'crafty',
-    'wiley'
+    'motionless',
+    'fluttery',
+    'lively',
+    'bald',
+    'BUTTERY',
+    'FLAKEY',
+    'LAYERED',
+    'ENRICHED',
+    'fresh',
+    'hot',
+    'delicious',
 ]);
