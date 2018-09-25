@@ -12,6 +12,7 @@
         let adjectives = [];
         let adverbs = [];
         let verbs = [];
+        let smileys = [];
 
         function chooseRandom(anArray) {
             return anArray[Math.floor(Math.random() * anArray.length)];
@@ -34,6 +35,8 @@
             storyContent = storyContent.replace(/ADJECTIVE/g, () => chooseRandom(adjectives));
             storyContent = storyContent.replace(/ADVERB/g, () => chooseRandom(adverbs));
             storyContent = storyContent.replace(/VERB/g, () => chooseRandom(verbs));
+            storyContent = storyContent.replace(/SMILEY/g, () => chooseRandom(smileys));
+            
 
             document.querySelector('#rendered-story').innerHTML = storyContent;
         }
@@ -44,6 +47,7 @@
     <script src="js/adverbs/kyle.js"></script>
     <script src="js/nouns/kyle.js"></script>
     <script src="js/adjectives/kyle.js"></script>
+    <script src="js/smileys/kyle.js"></script>
 </head>
 
 <body>
@@ -56,10 +60,10 @@
 
     <!-- Feel free to add your own stories! -->
     <div class="story">
-        The ADJECTIVE NOUN VERBs over the ADJECTIVE NOUN.
+        The ADJECTIVE NOUN VERBs over the ADJECTIVE NOUN. SMILEY
     </div>
     <div class="story">
-        NOUN and NOUN VERB togther ADVERB and in peace, for such is their nature.
+        NOUN and NOUN VERB togther ADVERB and in peace, for such is their nature. SMILEY
     </div>
 
     <script>
